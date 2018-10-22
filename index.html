@@ -10,7 +10,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,900" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 </head>
 <body>
@@ -41,33 +41,24 @@
   <section class="about container" id="about">
     <h3 class="heading">Про фестиваль:</h3>
     <p class="about__text text">
-      Щорічний правозахисний фестиваль <strong>«Арт проти насильства»</strong> спрямований на
-      <br>актуалізацію проблеми насильства по відношенню до жінок,
-      <br>питання стигми та дискримінації у суспільстві.
-    </p>
-    <p class="about__text text">
-      В рамках цьогорічного фестивалю
-      <strong>21 листопала у Києві, у Концерт-холі «Аллєгро» за адресою: пр-кт Перемоги 82-84 (парк «Нивки») </strong>
-      <br>відбудеться театральна вистава-перформанс <strong>"Спляча красуня",</strong>
-      <br>а також офіційна зустріч з представниками громадської організації <strong>«Еней»</strong>.
+      Громадська організація <strong>"Клуб "Еней"</strong> запрошує на щорічний фестиваль <strong>"Арт проти насильства".</strong></p>
+    <p class="about__text text">Мета фестивалю - захист життя і здоров'я жінок.</p>
+    <p class="about__text text">На цьогорічному фестивалю 21 листопада о 17.00 у Києві, у концерт-холі "Аллєгро" за адресою: пр-т Перемоги 82-84 (парк "Нивки") відбудеться театральна вистава - перформанс "Спляча красуня",<br> музичний концерт молодих сучасних виконавців, а також прес-конференція та зустріч з відомими активістками та експертками національного та міжнародного рівнів.</p>
     </p>
     <h3 class="questions-heading heading">Питання, які будуть висвітлюватись:</h3>
     <div class="questions">
       <div class="questions__item">
-        <h4 class="questions__item-name">Наркозалежність</h4>
-        <p class="questions__item-text">поширення інформації про хворобу та наслідкі вживання;</p>
+        <h4 class="questions__item-name">Ситуація за насильством по відношенню до жінок в Україні</h4>
       </div>
       <div class="questions__item">
-        <h4 class="questions__item-name">Віл інфекція</h4>
-        <p class="questions__item-text">лікування, догляду та підтримки ВІЛ-інфікованих і хворих на СНІД;</p>
+        <h4 class="questions__item-name">Високий рівень стигми та дискримінації по відношенню до наркозалежних
+          жінок</h4>
       </div>
       <div class="questions__item">
-        <h4 class="questions__item-name">Наркозалежність</h4>
-        <p class="questions__item-text">інноваційні методи роботи та програми лікування наркозалежних;</p>
+        <h4 class="questions__item-name">Бар'єри в отриманні допомоги у ситуаціях насильства насильства</h4>
       </div>
       <div class="questions__item">
-        <h4 class="questions__item-name">Права жінок</h4>
-        <p class="questions__item-text">домашнє насильство над жінками, права жінок.</p>
+        <h4 class="questions__item-name">Гуманна наркополітика</h4>
       </div>
     </div>
   </section>
@@ -75,22 +66,23 @@
   <section class="registration" id="registration">
     <div class="container">
       <h3 class="registration__heading">Зареєструватись<br> на фeстиваль</h3>
-      <form  action="mailto:olgaa.yatsuk@example.com" method="post" enctype="text/plain">
+      <form action="/" method="post">
         <div class="registration-row">
           <p class="registration__field">
             <label for="name" class="registration__field-label">Ім'я</label>
-            <input type="text" class="registration__field-input" id="name">
+            <input type="text" class="registration__field-input" name="name" id="name">
           </p>
           <p class="registration__field">
             <label for="email" class="registration__field-label">Електронна пошта</label>
-            <input type="text" class="registration__field-input" id="email" placeholder="name@mail.com">
+            <input type="text" class="registration__field-input" name="email" id="email"
+                   placeholder="name@mail.com">
           </p>
         </div>
         <p class="registration__field">
           <label for="message" class="registration__field-label">Ваше запитання</label>
-          <textarea class="registration__field-input" id="message"></textarea>
+          <textarea class="registration__field-input" name="message" id="message"></textarea>
         </p>
-        <input type="submit" value="відправити" class="registration__submit">
+        <input type="submit" value="відправити" name="submit" class="registration__submit">
       </form>
     </div>
   </section>
@@ -139,6 +131,7 @@
       <p class="text">Координатор ГО "Клуб Еней"</p>
     </div>
     <a href="mailto:clubeney.ua@gmail.com" class="mail">clubeney.ua@gmail.com</a>
+    <p class="support">За фінансової підтримки <br>БФ "Відродження"</p>
   </div>
 </footer>
 <script src="./js/jquery.min.js"></script>
