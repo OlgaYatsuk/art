@@ -1,138 +1,147 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
-  <title>New credit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+    <title>New credit</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,900" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 </head>
 <body>
 <!--begin header-->
 <header class="header">
-  <nav class="navigation js-nav">
-    <a href="#" class="navigation__link">Головна</a>
-    <a href="#about" class="navigation__link">Про фестиваль</a>
-    <a href="#registration" class="navigation__link">Реєстрація</a>
-    <a href="#partners" class="navigation__link">Партнери</a>
-    <a href="#program" class="navigation__link">Програма</a>
-    <a href="#contacts" class="navigation__link">Контакти</a>
-  </nav>
+    <nav class="navigation js-scroll">
+        <a href="#" class="navigation__link">Головна</a>
+        <a href="#about" class="navigation__link">Про фестиваль</a>
+        <a href="#registration" class="navigation__link">Реєстрація</a>
+        <a href="#partners" class="navigation__link">Партнери</a>
+        <a href="#program" class="navigation__link">Програма</a>
+        <a href="#contacts" class="navigation__link">Контакти</a>
+    </nav>
 </header>
 <!--end header-->
-<main class="main">
-  <div class="hero">
-    <div class="container">
-      <img src="./img/hero-logo-1.png" class="hero__logo">
-      <article class="hero-text">
-        <h2 class="hero-text__date heading">21 листопада</h2>
-        <p class="hero-text__invite">запрошуємо на фестиваль</p>
-        <h1 class="hero-text__event">"Арт проти насильства"</h1>
-      </article>
-      <img src="./img/hero-logo-2.png" class="hero__logo">
-    </div>
-  </div>
-  <section class="about container" id="about">
-    <h3 class="heading">Про фестиваль:</h3>
-    <p class="about__text text">
-      Громадська організація <strong>"Клуб "Еней"</strong> запрошує на щорічний фестиваль <strong>"Арт проти насильства".</strong></p>
-    <p class="about__text text">Мета фестивалю - захист життя і здоров'я жінок.</p>
-    <p class="about__text text">На цьогорічному фестивалю 21 листопада о 17.00 у Києві, у концерт-холі "Аллєгро" за адресою: пр-т Перемоги 82-84 (парк "Нивки") відбудеться театральна вистава - перформанс "Спляча красуня",<br> музичний концерт молодих сучасних виконавців, а також прес-конференція та зустріч з відомими активістками та експертками національного та міжнародного рівнів.</p>
-    </p>
-    <h3 class="questions-heading heading">Питання, які будуть висвітлюватись:</h3>
-    <div class="questions">
-      <div class="questions__item">
-        <h4 class="questions__item-name">Ситуація за насильством по відношенню до жінок в Україні</h4>
-      </div>
-      <div class="questions__item">
-        <h4 class="questions__item-name">Високий рівень стигми та дискримінації по відношенню до наркозалежних
-          жінок</h4>
-      </div>
-      <div class="questions__item">
-        <h4 class="questions__item-name">Бар'єри в отриманні допомоги у ситуаціях насильства насильства</h4>
-      </div>
-      <div class="questions__item">
-        <h4 class="questions__item-name">Гуманна наркополітика</h4>
-      </div>
-    </div>
-  </section>
-
-  <section class="registration" id="registration">
-    <div class="container">
-      <h3 class="registration__heading">Зареєструватись<br> на фeстиваль</h3>
-      <form action="/" method="post">
-        <div class="registration-row">
-          <p class="registration__field">
-            <label for="name" class="registration__field-label">Ім'я</label>
-            <input type="text" class="registration__field-input" name="name" id="name">
-          </p>
-          <p class="registration__field">
-            <label for="email" class="registration__field-label">Електронна пошта</label>
-            <input type="text" class="registration__field-input" name="email" id="email"
-                   placeholder="name@mail.com">
-          </p>
+<main class="main" id="hero">
+    <div class="hero">
+        <div class="container">
+            <img src="./img/hero-logo-1.png" class="hero__logo">
+            <article class="hero-text">
+                <h2 class="hero-text__date heading">21 листопада</h2>
+                <p class="hero-text__invite">запрошуємо на фестиваль</p>
+                <h1 class="hero-text__event">"Арт проти насильства"</h1>
+            </article>
+            <img src="./img/hero-logo-2.png" class="hero__logo">
         </div>
-        <p class="registration__field">
-          <label for="message" class="registration__field-label">Ваше запитання</label>
-          <textarea class="registration__field-input" name="message" id="message"></textarea>
+    </div>
+    <section class="about container" id="about">
+        <h3 class="heading">Про фестиваль:</h3>
+        <p class="about__text text">
+            Громадська організація <strong>"Клуб "Еней"</strong> запрошує на щорічний фестиваль <strong>"Арт проти насильства".</strong></p>
+        <p class="about__text text">Мета фестивалю - захист життя і здоров'я жінок.</p>
+        <p class="about__text text">На цьогорічному фестивалю 21 листопада о 17.00 у Києві, у концерт-холі "Аллєгро" за адресою: пр-т Перемоги 82-84 (парк "Нивки") відбудеться театральна вистава - перформанс "Спляча красуня",<br> музичний концерт молодих сучасних виконавців, а також прес-конференція та зустріч з відомими активістками та експертками національного та міжнародного рівнів.</p>
         </p>
-        <input type="submit" value="відправити" name="submit" class="registration__submit">
-      </form>
-    </div>
-  </section>
+        <h3 class="questions-heading heading">Питання, які будуть висвітлюватись:</h3>
+        <div class="questions">
+            <div class="questions__item">
+                <h4 class="questions__item-name">Ситуація за насильством по відношенню до жінок в Україні</h4>
+            </div>
+            <div class="questions__item">
+                <h4 class="questions__item-name">Високий рівень стигми та дискримінації по відношенню до наркозалежних
+                    жінок</h4>
+            </div>
+            <div class="questions__item">
+                <h4 class="questions__item-name">Бар'єри в отриманні допомоги у ситуаціях насильства насильства</h4>
+            </div>
+            <div class="questions__item">
+                <h4 class="questions__item-name">Гуманна наркополітика</h4>
+            </div>
+        </div>
+    </section>
 
-  <section class="partners container" id="partners">
-    <h3 class="heading">Партнери фестивалю:</h3>
-    <div class="partners-wrapper">
-      <figure class="partners-item"><img src="./img/partner-1.png" alt="" class="partners-item__logo">
-        <figcaption class="partners-item__name">
-          Громадська організація «Клуб «ЕНЕЙ»
-          <a href="http://clubeney.org.ua/" class="partners-item__link">http://clubeney.org.ua/</a>
-        </figcaption>
-      </figure>
-      <figure class="partners-item"><img src="./img/partner-2.png" alt="" class="partners-item__logo">
-        <figcaption class="partners-item__name">
-          БФ "Відродження"
-          <a href="http://www.irf.ua/" class="partners-item__link">http://www.irf.ua/</a>
-        </figcaption>
-      </figure>
-      <figure class="partners-item"><img src="./img/partner-3.png" alt="" class="partners-item__logo">
-        <figcaption class="partners-item__name">
-          БО «Позитивні жінки»
-          <a href="http://www.pw.org.ua/" class="partners-item__link">http://www.pw.org.ua/</a>
-        </figcaption>
-      </figure>
-      <figure class="partners-item"><img src="./img/partner-4.png" alt="" class="partners-item__logo">
-        <figcaption class="partners-item__name">
-          БО «Всеукраїнське об’єднання людей, що живуть з наркозалежністю»
-          <a href="http://www.volna.in.ua" class="partners-item__link">http://www.volna.in.ua</a>
-        </figcaption>
-      </figure>
+    <section class="registration" id="registration">
+        <div class="container">
+            <h3 class="registration__heading">Зареєструватись<br> на фeстиваль</h3>
+            <form action="/" method="post">
+                <div class="registration-row">
+                    <p class="registration__field">
+                        <label for="name" class="registration__field-label">Ім'я</label>
+                        <input type="text" class="registration__field-input" name="name" id="name">
+                    </p>
+                    <p class="registration__field">
+                        <label for="email" class="registration__field-label">Електронна пошта</label>
+                        <input type="text" class="registration__field-input" name="email" id="email"
+                               placeholder="name@mail.com">
+                    </p>
+                </div>
+                <p class="registration__field">
+                    <label for="message" class="registration__field-label">Ваше запитання</label>
+                    <textarea class="registration__field-input" name="message" id="message"></textarea>
+                </p>
+                <input type="submit" value="відправити" name="submit" class="registration__submit">
+            </form>
+        </div>
+    </section>
+
+    <section class="partners container" id="partners">
+        <h3 class="heading">Партнери фестивалю:</h3>
+        <div class="partners-wrapper">
+            <figure class="partners-item"><img src="./img/partner-1.png" alt="" class="partners-item__logo">
+                <figcaption class="partners-item__name">
+                    ГО «Клуб «ЕНЕЙ»
+                    <a href="http://clubeney.org.ua/" class="partners-item__link">http://clubeney.org.ua/</a>
+                </figcaption>
+            </figure>
+            <figure class="partners-item"><img src="./img/partner-2.png" alt="" class="partners-item__logo">
+                <figcaption class="partners-item__name">
+                    БФ "Відродження"
+                    <a href="http://www.irf.ua/" class="partners-item__link">http://www.irf.ua/</a>
+                </figcaption>
+            </figure>
+            <figure class="partners-item"><img src="./img/partner-3.png" alt="" class="partners-item__logo">
+                <figcaption class="partners-item__name">
+                    БО «Позитивні жінки»
+                    <a href="http://www.pw.org.ua/" class="partners-item__link">http://www.pw.org.ua/</a>
+                </figcaption>
+            </figure>
+            <figure class="partners-item"><img src="./img/partner-5.png" alt="" class="partners-item__logo">
+                <figcaption class="partners-item__name">
+                    БО «Надія та Довіра»
+                    <a href="http://hopeandtrust.org.ua/" class="partners-item__link">http://hopeandtrust.org.ua/</a>
+                </figcaption>
+            </figure>
+            <figure class="partners-item"><img src="./img/partner-4.png" alt="" class="partners-item__logo">
+                <figcaption class="partners-item__name">
+                    БО «Всеукраїнське об’єднання людей, що живуть з наркозалежністю»
+                    <a href="http://www.volna.in.ua" class="partners-item__link">http://www.volna.in.ua</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <div class="event-start js-scroll" id="program">
+        <p>Початок вистави</p>
+        <h2 class="heading">"Спляча красуня"</h2>
+        <p class="event-start__time">17:00</p>
+        <a href="#hero" class="scroll-top"><img src="img/arrow.svg" alt="to top"></a>
     </div>
-  </section>
-  <div class="event-start" id="program">
-    <p>Початок вистави</p>
-    <h2 class="heading">"Спляча красуня"</h2>
-    <p class="event-start__time">17:00</p>
-  </div>
 </main>
 <footer class="footer" id="contacts">
-  <div class="container">
-    <h3 class="heading">Контакти</h3>
-    <p class="text">Раді відповісти на всі Ваші запитання:</p>
-    <div class="footer-coordinator">
-      <p class="text">Аліна Сарнацька</p>
-      <p class="text">Координатор ГО "Клуб Еней"</p>
+    <div class="container">
+        <h3 class="heading">Контакти</h3>
+        <p class="text">Раді відповісти на всі Ваші запитання:</p>
+        <div class="footer-coordinator">
+            <p class="text">Аліна Сарнацька</p>
+            <p class="text">Координатор ГО "Клуб Еней"</p>
+        </div>
+        <a href="mailto:clubeney.ua@gmail.com" class="mail">clubeney.ua@gmail.com</a>
+        <img src="./img/partner-1.png" alt="" class="footer__logo">
+        <div class="support">Фестиваль відбудеться за підтримки <br>Міжнародного фонду «Відродження». <br>Позиція Міжнародного фонду <br>«Відродження» може не співпадати з думкою автора
+            <p>За фінансової підтримки <br>БФ "Відродження"</p></div>
     </div>
-    <a href="mailto:clubeney.ua@gmail.com" class="mail">clubeney.ua@gmail.com</a>
-    <p class="support">За фінансової підтримки <br>БФ "Відродження"</p>
-  </div>
 </footer>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/main.js"></script>

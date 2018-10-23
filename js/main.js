@@ -1,7 +1,7 @@
-const $menu = $('.js-nav');
+const $body = $('.js-scroll');
 const $root = $('body,html');
 
-  $menu.on('click', 'a', scrollToBlock);
+  $body.on('click', 'a', scrollToBlock);
 
   function scrollToBlock(e) {
 
@@ -11,3 +11,17 @@ const $root = $('body,html');
     $root.animate({scrollTop: top}, 800);
   }
 
+
+
+  $(document).on('scroll', function () {
+      const scrollTop = window.pageYOffset;
+      if (scrollTop > 400) {
+          console.log(scrollTop);
+          $('.scroll-top').fadeIn(250)
+      }
+
+      else {
+          console.log(scrollTop);
+          $('.scroll-top').fadeOut(250)
+      }
+  });
